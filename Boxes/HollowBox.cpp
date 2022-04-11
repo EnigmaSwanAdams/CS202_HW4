@@ -24,6 +24,24 @@ HollowBox::HollowBox(int w, int h): Box(w, h) {
 //printing function
 void HollowBox::print(std::ostream& os) const {
 	os  << "printing Hollow box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;
+
+	for (int columnNum = 1; columnNum <= this->getWidth(); columnNum++) { // print first line 
+		os << "x";
+	}
+	os << endl;
+
+	for (int lineNum = 2; lineNum <= this->getHeight()-1; lineNum++) { // print body 
+		os << "x";
+		for (int columnNum = 2; columnNum <= this->getWidth()-1; columnNum++) {
+			os << " ";
+		}
+		os << "x" << endl; 
+	}
+
+	for (int columnNum = 1; columnNum <= this->getWidth(); columnNum++) { // print last line 
+		os << "x";
+	}
+	os << endl;
 }
 
 //type function (returns the type of box as a decriptive string)
