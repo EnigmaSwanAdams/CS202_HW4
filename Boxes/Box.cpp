@@ -21,32 +21,32 @@ using std::unique_ptr;
 
 // defualt constructor
 Box::Box() : _w(1), _h(1) {
-	cout << "box defualt constructor \n";
+	//cout << "box defualt constructor \n";
 }
 
 // quick constructor
 Box::Box(int w, int h) : _w(w), _h(h) {
-	cout << "box defualt constructor with width:" << _w << " height: " << _h << endl;;
+	//cout << "box defualt constructor with width:" << _w << " height: " << _h << endl;;
 }
 	
 // get functions
 int Box::getWidth() const {
-	cout << "box getw \n";
+	//cout << "box getw \n";
 	return _w;
 }
 
 int Box::getHeight() const{
-	cout << "box geth \n";
+	//cout << "box geth \n";
 	return _h;
 }
 
 // set functions
 void Box::setWidth(int w) {
-	cout << "set w \n";
+	//cout << "set w \n";
 	_w = w;
 }
 void Box::setHeight(int h) {
-	cout << "set h \n";
+	//cout << "set h \n";
 	_h = h;
 }
 

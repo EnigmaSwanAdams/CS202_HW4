@@ -14,11 +14,11 @@
 // class defintions
 // defualt constructor 
 HollowBox::HollowBox(): Box() {
-	cout << "called hollowed box defualt \n";
+	//cout << "called hollowed box defualt \n";
 };
 // quick contructor
 HollowBox::HollowBox(int w, int h): Box(w, h) {
-	cout << "called hollowed box defualt \n";
+	//cout << "called hollowed box defualt \n";
 };
 
 //printing function
