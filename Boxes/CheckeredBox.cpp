@@ -13,6 +13,10 @@
 
 // class defintions
 // defualt constructor 
-CheckeredBox::CheckeredBox() {};
+CheckeredBox::CheckeredBox(): Box() {
+	cout <<"called checkered box defualt \n";
+};
 // quick contructor
-CheckeredBox::CheckeredBox(int w, int h) {};
+CheckeredBox::CheckeredBox(int w, int h): Box(w, h) {
+	cout << "called checkered box quick cosntructor \n";
+};

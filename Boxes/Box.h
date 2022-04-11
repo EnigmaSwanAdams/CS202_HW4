@@ -22,15 +22,18 @@ class Box
 {
 public:
 	// defualt contstructor
-	//Box(); =0; // I guess its not neccessary
+	Box();
 	
 	//quick constructor 
-	//Box(int w, int h); = 0; // I don't think it neccessary
+	Box(int w, int h);
 
+	// get functions
+	int getWidth() const;
+	int getHeight() const;
 
 private:
-	int w; // width
-	int h; // height
+	int _w; // width
+	int _h; // height
 };
 
 
