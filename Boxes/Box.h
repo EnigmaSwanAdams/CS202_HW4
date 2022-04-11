@@ -42,6 +42,8 @@ public:
 	//type virtual function (returns the type of box as a decriptive string)
 	virtual std::string type() const = 0;
 	
+	
+	
 
 private:
 	int _w; // width
@@ -49,6 +51,9 @@ private:
 };
 
 
+// global function << operator overload 
+// doesn't need to be friend since we have get and set functions
+std::ostream& operator<<(std::ostream& os, const Box &b);
 
 
 

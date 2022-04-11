@@ -50,10 +50,11 @@ int main() {
 	cb.print(cout);
 	qhb.print();
 
+	cout << endl;
+	cout << "**checkered boxes type: " << cb.type() << endl;
+	cout << "**quick hollow boxes type: " << qhb.type() << endl;
 
-	cout << "checkered boxes type: " << cb.type() << endl;
-	cout << "quick hollow boxes type: " << qhb.type() << endl;
-
-
+	cout << qcb << endl;
+	cout << hb << endl;
 	return 0;
 }

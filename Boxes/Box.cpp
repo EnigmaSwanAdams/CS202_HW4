@@ -44,3 +44,11 @@ void Box::setHeight(int h) {
 	_h = h;
 }
 
+
+// global function << operator overload 
+// doesn't need to eb friend since we have get and set functions
+std::ostream& operator<<(std::ostream& os, const Box &b) {
+	os << "calling operator<< overload for boxes... \n";
+	b.print(os);
+	return os;
+}
