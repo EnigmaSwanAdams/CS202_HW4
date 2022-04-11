@@ -15,7 +15,7 @@
 #include "CheckeredBox.h"
 #include "HollowBox.h"
 
-
+using std::unique_ptr;
 
 int main() {
 	//Box b;
@@ -56,5 +56,15 @@ int main() {
 
 	cout << qcb << endl;
 	cout << hb << endl;
+
+	cout << "***************" << endl;
+
+	
+	
+	auto box2Ptr = boxFactory('h', 5, 5);
+	cout << "new box b: " << *box2Ptr << endl;
+	
+	
+
 	return 0;
 }

@@ -42,8 +42,6 @@ public:
 	//type virtual function (returns the type of box as a decriptive string)
 	virtual std::string type() const = 0;
 	
-	
-	
 
 private:
 	int _w; // width
@@ -55,6 +53,8 @@ private:
 // doesn't need to be friend since we have get and set functions
 std::ostream& operator<<(std::ostream& os, const Box &b);
 
-
+//boxfactory function creates boxes of specified types 
+// returns a null pointer if an incorrect box type character specfier is passed
+std::unique_ptr<Box> boxFactory(char c, int w = 1, int h = 1);
 
 #endif /* BOX_H */

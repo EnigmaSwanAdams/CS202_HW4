@@ -10,7 +10,13 @@
 */
 
 
-#include "Box.h"
+//#include "Box.h"
+#include "CheckeredBox.h"
+#include "FilledBox.h"
+#include "HollowBox.h"
+
+using std::unique_ptr;
+
 // class defintions
 
 // defualt constructor
@@ -51,4 +57,26 @@ std::ostream& operator<<(std::ostream& os, const Box &b) {
 	os << "calling operator<< overload for boxes... \n";
 	b.print(os);
 	return os;
+}
+
+//boxfactory function creates boxes of specified types 
+// returns a null pointer if an incorrect box type character specfier is passed
+unique_ptr<Box> boxFactory(char c, int w , int h ) {
+	if (c == 'c') {
+		return std::make_unique<CheckeredBox>(w,h);
+	}
+
+	else if (c == 'f') {
+		return std::make_unique<FilledBox>(w, h);
+	}
+
+	else if (c == 'h') {
+		return std::make_unique<HollowBox>(w, h);
+	}
+
+	// invalid character passed
+	else {
+		return NULL;
+	}
+	
 }
