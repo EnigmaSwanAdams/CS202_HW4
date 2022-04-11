@@ -6,28 +6,25 @@
 *
 *
 * file decription:
-*
+* HolloBox derived class constructors, desctructor
+* print, and type function definitions
 */
 
-//#include "HollowBox.h"
+
 #include "Box.hpp"
 
 // class defintions
 // defualt constructor 
-HollowBox::HollowBox(): Box() {
-	//cout << "called hollowed box defualt \n";
-};
+HollowBox::HollowBox(): Box() {};
+
 // quick contructor
-HollowBox::HollowBox(int w, int h): Box(w, h) {
-	//cout << "called hollowed box defualt \n";
-};
+HollowBox::HollowBox(int w, int h): Box(w, h) {};
 
 // destructor 
 HollowBox::~HollowBox() {};
 
 //printing function
 void HollowBox::print(std::ostream& os) const {
-	//os  << "printing Hollow box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;
 
 	for (int columnNum = 1; columnNum <= this->getWidth(); columnNum++) { // print first line 
 		os << "x";

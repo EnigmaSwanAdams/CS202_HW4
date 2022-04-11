@@ -6,7 +6,11 @@
 *
 *
 * file decription:
-* 
+* header containing all class
+* declarations
+* and associated global functions
+* for all Base classes and its 
+* derived classes
 */
 
 
@@ -14,7 +18,7 @@
 #include <iostream> 
 #include <ostream>
 using std::cout;
-using std::endl;
+
 
 #ifndef BOX_H_
 #define BOX_H_

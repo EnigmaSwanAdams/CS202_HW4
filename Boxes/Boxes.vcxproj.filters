@@ -32,15 +32,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FilledBox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CheckeredBox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HollowBox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Box.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
