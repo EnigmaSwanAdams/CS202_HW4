@@ -38,6 +38,9 @@ public:
 
 	//printing virtual function
 	virtual void print(std::ostream& os = cout) const =0;
+
+	//type virtual function (returns the type of box as a decriptive string)
+	virtual std::string type() const = 0;
 	
 
 private:

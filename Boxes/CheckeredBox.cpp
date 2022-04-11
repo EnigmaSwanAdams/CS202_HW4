@@ -25,3 +25,8 @@ CheckeredBox::CheckeredBox(int w, int h): Box(w, h) {
 void CheckeredBox::print(std::ostream& os) const {
 	os << "printing checkered box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;
 }
+
+//type function (returns the type of box as a decriptive string)
+std::string CheckeredBox::type() const {
+	return "Checkered";
+}

@@ -27,6 +27,8 @@ public:
 	//printing function
 	void print(std::ostream& os = cout) const;
 	
+	//type function (returns the type of box as a decriptive string)
+	std::string type() const;
 
 private:
 	

@@ -51,5 +51,9 @@ int main() {
 	qhb.print();
 
 
+	cout << "checkered boxes type: " << cb.type() << endl;
+	cout << "quick hollow boxes type: " << qhb.type() << endl;
+
+
 	return 0;
 }
