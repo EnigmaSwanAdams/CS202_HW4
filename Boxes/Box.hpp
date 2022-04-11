@@ -29,6 +29,9 @@ public:
 	//quick constructor 
 	Box(int w, int h);
 
+	//virtual desctructor
+	virtual ~Box();
+
 	// get functions
 	int getWidth() const;
 	int getHeight() const;
@@ -56,8 +59,12 @@ class FilledBox : public Box {
 public:
 	// defualt constructor 
 	FilledBox();
+
 	// quick contructor
 	FilledBox(int w, int h);
+
+	//destructor 
+	~FilledBox();
 
 	//printing function
 	void print(std::ostream& os = cout) const;
@@ -75,8 +82,12 @@ class CheckeredBox : public Box {
 public:
 	// defualt constructor 
 	CheckeredBox();
+
 	// quick contructor
 	CheckeredBox(int w, int h);
+
+	// desctructor
+	~CheckeredBox();
 
 	//printing function
 	void print(std::ostream& os = cout) const;
@@ -95,8 +106,12 @@ class HollowBox : public Box {
 public:
 	// defualt constructor 
 	HollowBox();
+
 	// quick contructor
 	HollowBox(int w, int h);
+
+	// destrctor
+	~HollowBox();
 
 	//printing function
 	void print(std::ostream& os = cout) const;

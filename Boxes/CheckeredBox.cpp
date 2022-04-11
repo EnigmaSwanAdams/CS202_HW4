@@ -22,6 +22,9 @@ CheckeredBox::CheckeredBox(int w, int h): Box(w, h) {
 	//cout << "called checkered box quick cosntructor \n";
 };
 
+// destructor 
+CheckeredBox::~CheckeredBox() {};
+
 //printing function
 void CheckeredBox::print(std::ostream& os) const {
 	//os << "printing checkered box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;

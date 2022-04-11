@@ -28,6 +28,9 @@ Box::Box() : _w(1), _h(1) {
 Box::Box(int w, int h) : _w(w), _h(h) {
 	//cout << "box defualt constructor with width:" << _w << " height: " << _h << endl;;
 }
+
+// destructor 
+Box::~Box(){}
 	
 // get functions
 int Box::getWidth() const {

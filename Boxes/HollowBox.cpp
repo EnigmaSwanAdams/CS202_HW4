@@ -22,6 +22,9 @@ HollowBox::HollowBox(int w, int h): Box(w, h) {
 	//cout << "called hollowed box defualt \n";
 };
 
+// destructor 
+HollowBox::~HollowBox() {};
+
 //printing function
 void HollowBox::print(std::ostream& os) const {
 	//os  << "printing Hollow box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;
