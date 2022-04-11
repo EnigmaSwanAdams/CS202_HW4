@@ -25,19 +25,22 @@ Box::Box(int w, int h) : _w(w), _h(h) {
 	
 // get functions
 int Box::getWidth() const {
-	cout << "box setw \n";
+	cout << "box getw \n";
 	return _w;
 }
 
 int Box::getHeight() const{
-	cout << "box seth \n";
+	cout << "box geth \n";
 	return _h;
 }
 
 // set functions
 void Box::setWidth(int w) {
+	cout << "set w \n";
 	_w = w;
 }
 void Box::setHeight(int h) {
+	cout << "set h \n";
 	_h = h;
 }
+

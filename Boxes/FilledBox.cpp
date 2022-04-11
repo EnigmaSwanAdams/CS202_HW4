@@ -20,3 +20,8 @@ FilledBox::FilledBox(): Box() {
 FilledBox::FilledBox(int w, int h): Box(w, h) {
 	cout << "called filled box defualt \n";
 };
+
+//printing function
+void FilledBox::print(std::ostream& os) const { // only set defualt as cout in the function declaration not in definition
+	os << "printing filled box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;
+}

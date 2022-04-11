@@ -24,7 +24,8 @@ public:
 	// quick contructor
 	HollowBox(int w, int h);
 
-
+	//printing function
+	void print(std::ostream& os = cout) const;
 
 private:
 

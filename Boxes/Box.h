@@ -11,6 +11,7 @@
 
 
 #include <iostream> 
+#include <ostream>
 using std::cout;
 using std::endl;
 
@@ -34,6 +35,10 @@ public:
 	// set functions
 	void setWidth(int w);
 	void setHeight(int h);
+
+	//printing virtual function
+	virtual void print(std::ostream& os = cout) const =0;
+	
 
 private:
 	int _w; // width

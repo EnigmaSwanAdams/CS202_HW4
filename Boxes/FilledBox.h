@@ -24,6 +24,8 @@ public:
 	// quick contructor
 	FilledBox(int w, int h);
 	
+	//printing function
+	void print(std::ostream& os = cout) const;
 	
 
 private:
