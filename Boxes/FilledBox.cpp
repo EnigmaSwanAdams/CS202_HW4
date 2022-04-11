@@ -9,7 +9,8 @@
 *
 */
 
-#include "FilledBox.h"
+//#include "FilledBox.h"
+#include "Box.hpp"
 
 // class defintions 
 // defualt constructor 
@@ -23,12 +24,12 @@ FilledBox::FilledBox(int w, int h): Box(w, h) {
 
 //printing function
 void FilledBox::print(std::ostream& os) const { // only set defualt as cout in the function declaration not in definition
-	os << "printing filled box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;
+	//os << "printing filled box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;
 	for (int lineNum = 1; lineNum <= this->getHeight(); lineNum++) {
 		for (int columnNum = 1; columnNum <= this->getWidth(); columnNum++) {
 			os << "x";
 		}
-		os << endl; 
+		os << "\n"; 
 	}
 }
 

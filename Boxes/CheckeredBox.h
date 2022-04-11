@@ -9,7 +9,7 @@
 *
 */
 
-#include "Box.h"
+#include "Box.hpp"
 
 #ifndef CHECKEREDBOX_H_
 #define CHECKEREDBOX_H_

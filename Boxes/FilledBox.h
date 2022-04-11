@@ -9,7 +9,7 @@
 * 
 */
 
-#include "Box.h"
+#include "Box.hpp"
 
 
 #ifndef FILLEDBOX_H_

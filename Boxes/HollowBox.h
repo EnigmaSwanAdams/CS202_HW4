@@ -9,7 +9,7 @@
 *
 */
 
-#include "Box.h"
+#include "Box.hpp"
 
 #ifndef HOLLOWBOX_H_
 #define HOLLOWBOX_H_

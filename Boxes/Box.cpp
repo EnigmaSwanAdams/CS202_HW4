@@ -10,10 +10,10 @@
 */
 
 
-//#include "Box.h"
-#include "CheckeredBox.h"
-#include "FilledBox.h"
-#include "HollowBox.h"
+#include "Box.hpp"
+//#include "CheckeredBox.h"
+//#include "FilledBox.h"
+//#include "HollowBox.h"
 
 using std::unique_ptr;
 
@@ -54,7 +54,7 @@ void Box::setHeight(int h) {
 // global function << operator overload 
 // doesn't need to eb friend since we have get and set functions
 std::ostream& operator<<(std::ostream& os, const Box &b) {
-	os << "calling operator<< overload for boxes... \n";
+	//os << "calling operator<< overload for boxes... \n";
 	b.print(os);
 	return os;
 }

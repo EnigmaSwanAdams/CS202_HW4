@@ -9,7 +9,8 @@
 *
 */
 
-#include "CheckeredBox.h"
+//#include "CheckeredBox.h"
+#include "Box.hpp"
 
 // class defintions
 // defualt constructor 
@@ -23,7 +24,7 @@ CheckeredBox::CheckeredBox(int w, int h): Box(w, h) {
 
 //printing function
 void CheckeredBox::print(std::ostream& os) const {
-	os << "printing checkered box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;
+	//os << "printing checkered box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;
 	
 	for (int lineNum = 1; lineNum <= this->getHeight(); lineNum++) {
 		if (lineNum % 2 == 1) { // if the line number is odd start with x
@@ -36,7 +37,7 @@ void CheckeredBox::print(std::ostream& os) const {
 					os << " ";
 				}
 			}
-			os << endl; // line ended
+			os << "\n"; // line ended
 		}
 		else { // oherwise start with a space
 			for (int columnNum = 1; columnNum <= this->getWidth(); columnNum++) { // print a line
@@ -47,7 +48,7 @@ void CheckeredBox::print(std::ostream& os) const {
 					os << "x";
 				}
 			}
-			os << endl; // line ended
+			os << "\n"; // line ended
 		}
 	}
 }

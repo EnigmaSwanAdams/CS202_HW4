@@ -9,7 +9,8 @@
 *
 */
 
-#include "HollowBox.h"
+//#include "HollowBox.h"
+#include "Box.hpp"
 
 // class defintions
 // defualt constructor 
@@ -23,25 +24,27 @@ HollowBox::HollowBox(int w, int h): Box(w, h) {
 
 //printing function
 void HollowBox::print(std::ostream& os) const {
-	os  << "printing Hollow box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;
+	//os  << "printing Hollow box with wdith: " << this->getWidth() << " And height " << this->getHeight() << endl;
 
 	for (int columnNum = 1; columnNum <= this->getWidth(); columnNum++) { // print first line 
 		os << "x";
 	}
-	os << endl;
+	os << "\n";
 
 	for (int lineNum = 2; lineNum <= this->getHeight()-1; lineNum++) { // print body 
 		os << "x";
 		for (int columnNum = 2; columnNum <= this->getWidth()-1; columnNum++) {
 			os << " ";
 		}
-		os << "x" << endl; 
+		os << "x\n"; 
 	}
 
-	for (int columnNum = 1; columnNum <= this->getWidth(); columnNum++) { // print last line 
-		os << "x";
+	if (this->getHeight() > 1) {
+		for (int columnNum = 1; columnNum <= this->getWidth(); columnNum++) { // print last line 
+			os << "x";
+		}
+		os << "\n";
 	}
-	os << endl;
 }
 
 //type function (returns the type of box as a decriptive string)
