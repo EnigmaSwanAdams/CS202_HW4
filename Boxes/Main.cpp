@@ -27,6 +27,22 @@ int main() {
 	FilledBox qfb = FilledBox(7,8);
 
 	cout << "first boxes height: " << b.getHeight() << endl;
-	cout << "4th boxes width: " << qb.getHeight() << endl;
+	cout << "second boxes height: " << cb.getHeight() << endl;
+	cout << "5th boxes width: " << qb.getWidth() << endl;
+	cout << "6th boxes width: " << qcb.getWidth() << endl;
+
+	cout << "setting first box width to 6 and height to 8" << endl;
+	b.setHeight(8);
+	b.setWidth(6);
+	cout << "first boxes new height: " << b.getHeight() << endl;
+	cout << "First boxes new width: " << b.getWidth() << endl;
+
+
+	cout << "setting 2nd box width to 6 and height to 8" << endl;
+	cb.setHeight(8);
+	cb.setWidth(6);
+	cout << "2nd boxes new height: " << cb.getHeight() << endl;
+	cout << "2nd boxes new width: " << cb.getWidth() << endl;
+
 	return 0;
 }

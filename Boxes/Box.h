@@ -31,6 +31,10 @@ public:
 	int getWidth() const;
 	int getHeight() const;
 
+	// set functions
+	void setWidth(int w);
+	void setHeight(int h);
+
 private:
 	int _w; // width
 	int _h; // height

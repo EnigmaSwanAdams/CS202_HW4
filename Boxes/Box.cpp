@@ -33,3 +33,11 @@ int Box::getHeight() const{
 	cout << "box seth \n";
 	return _h;
 }
+
+// set functions
+void Box::setWidth(int w) {
+	_w = w;
+}
+void Box::setHeight(int h) {
+	_h = h;
+}
