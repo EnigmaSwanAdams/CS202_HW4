@@ -19,11 +19,14 @@ using std::unique_ptr;
 
 int main() {
 	
-	auto box1 = boxFactory('c',4,4);
-	cout << *box1;
+	//auto box1 = boxFactory('c',4,4);
+	//cout << *box1;
 
-	auto box2 = boxFactory('h', 10, 5);
-	cout << *box2;
+	//auto box2 = boxFactory('h', 10, 5);
+	//cout << *box2;
+
+	//auto box3 = boxFactory('f', 4, 4);
+	//cout << *box3;
 
 	return 0;
 }
